@@ -19,7 +19,7 @@ def listMovies(movies, seen = False):
     for key in movies:
         if movies[key][0] == "seen": 
             if   movies[key][1] == "rewatch"    : print(bcolors.OKGREEN + "{} : {} | {}".format(key, movies[key][2], movies[key][3]) + bcolors.ENDC)
-            elif movies[key][1] == "watch"      : print(bcolors.WARNING + "{} : {} | {}".format(key, movies[key][2], movies[key][3]) + bcolors.ENDC)
+            elif movies[key][1] == "watch"      : print(bcolors.OKCYAN + "{} : {} | {}".format(key, movies[key][2], movies[key][3]) + bcolors.ENDC)
             elif movies[key][1] == "don't watch": print(bcolors.FAIL    + "{} : {} | {}".format(key, movies[key][2], movies[key][3]) + bcolors.ENDC)
             else                                : print(bcolors.BOLD    + "{} : {} | {}".format(key, movies[key][2], movies[key][3]) + bcolors.ENDC)
 
